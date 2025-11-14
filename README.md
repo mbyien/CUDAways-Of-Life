@@ -3,7 +3,8 @@
 ## Key Components:
 
 **Domain Decomposition:** The grid is split horizontally across multiple GPUs, with each GPU handling a portion of the rows
-Halo Exchange: Uses NCCL to exchange boundary rows between adjacent GPUs:
+
+**Halo Exchange:** Uses NCCL to exchange boundary rows between adjacent GPUs:
 
 Each GPU sends its top and bottom boundary rows to neighbors
 Receives halo data from adjacent GPUs to compute boundary cells correctly
