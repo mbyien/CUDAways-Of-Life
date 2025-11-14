@@ -1,5 +1,9 @@
 # CUDAways Of Life
-
+## Next step
+* Finish writing tests
+* Benchmarking
+* Create script to visualize results
+* documentation on benchmarks and images generated
 ## Key Components:
 
 **Domain Decomposition:** The grid is split horizontally across multiple GPUs, with each GPU handling a portion of the rows
