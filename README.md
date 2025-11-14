@@ -1,9 +1,12 @@
 # CUDAways Of Life
-## Next step
-* Finish writing tests
-* Benchmarking
-* Create script to visualize results
-* documentation on benchmarks and images generated
+## Features:
+
+* Supports any number of GPUs (automatically detected)
+* 1024x1024 grid with 30% initial cell density
+* Horizontal wrapping (periodic boundary in x-direction)
+* Vertical distribution with halo exchange via NCCL
+* 1000 iterations by default
+* 
 ## Key Components:
 
 **Domain Decomposition:** The grid is split horizontally across multiple GPUs, with each GPU handling a portion of the rows
@@ -20,10 +23,8 @@ nvcc -o game_of_life game_of_life.cu -lnccl
 ./game_of_life
 ```
 
-## Features:
-
-* Supports any number of GPUs (automatically detected)
-* 1024x1024 grid with 30% initial cell density
-* Horizontal wrapping (periodic boundary in x-direction)
-* Vertical distribution with halo exchange via NCCL
-* 1000 iterations by default
+## Next step
+* Finish writing tests
+* Benchmarking
+* Create script to visualize results
+* documentation on benchmarks and images generated
