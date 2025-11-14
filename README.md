@@ -6,7 +6,6 @@
 * Horizontal wrapping (periodic boundary in x-direction)
 * Vertical distribution with halo exchange via NCCL
 * 1000 iterations by default
-* 
 ## Key Components:
 
 **Domain Decomposition:** The grid is split horizontally across multiple GPUs, with each GPU handling a portion of the rows
