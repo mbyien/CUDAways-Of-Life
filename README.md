@@ -27,3 +27,4 @@ nvcc -o game_of_life game_of_life.cu -lnccl
 * Benchmarking
 * Create script to visualize results
 * documentation on benchmarks and images generated
+* generate extra layers so it's not 1024x1024, but 1024x1024x5
